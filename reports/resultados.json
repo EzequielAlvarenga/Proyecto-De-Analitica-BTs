@@ -1,0 +1,114 @@
+{
+  "raw_rows": 547271,
+  "raw_nulls": {
+    "DayofMonth": 0,
+    "DayOfWeek": 0,
+    "FlightDate": 0,
+    "Reporting_Airline": 0,
+    "Flight_Number_Reporting_Airline": 0,
+    "Origin": 0,
+    "Dest": 0,
+    "CRSDepTime": 0,
+    "DepDelay": 19858,
+    "ArrDelay": 21901,
+    "ArrDel15": 21901,
+    "Cancelled": 0,
+    "Diverted": 0,
+    "CRSElapsedTime": 0,
+    "Distance": 0,
+    "CarrierDelay": 420861,
+    "WeatherDelay": 420861,
+    "NASDelay": 420861,
+    "SecurityDelay": 420861,
+    "LateAircraftDelay": 420861
+  },
+  "source": "https://transtats.bts.gov/PREZIP/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_2024_1.zip",
+  "sha256": "fe089b45523f9d4ac0ccd0e176a543d274e914ee5ae5bd384dbaafc7dc06ebfd",
+  "exact_duplicates": 0,
+  "duplicate_keys": 0,
+  "cancelled": 20389,
+  "diverted": 1512,
+  "missing_target": 0,
+  "physical_invalid": 0,
+  "label_mismatches": 0,
+  "iqr_bounds": [
+    -59.5,
+    56.5
+  ],
+  "iqr_flags_retained": 48786,
+  "eligible_rows": 525370,
+  "delay_rate": 0.24061137864742943,
+  "hypothesis": {
+    "days": 31,
+    "evening_minus_morning": 0.09240392829023543,
+    "t": 7.181862557889543,
+    "p": 5.430760083849489e-08,
+    "ci95": [
+      0.06612745807376308,
+      0.11868039850670778
+    ],
+    "daily_lag1_autocorr": 0.35029129067068676
+  },
+  "split": {
+    "train": 303509,
+    "validation": 100887,
+    "test": 120974
+  },
+  "candidates": [
+    {
+      "depth": 2,
+      "validation_auc": 0.894464947959844
+    },
+    {
+      "depth": 3,
+      "validation_auc": 0.9115145322252388
+    },
+    {
+      "depth": 4,
+      "validation_auc": 0.9175434703866676
+    }
+  ],
+  "selected_depth": 4,
+  "test_metrics": {
+    "roc_auc": 0.9110404794512261,
+    "pr_auc": 0.811419812774025,
+    "accuracy": 0.9366227453833055,
+    "precision": 0.8587162162162162,
+    "recall": 0.6950505879135904,
+    "f1": 0.7682635635484358,
+    "brier": 0.05187575659977461,
+    "confusion_matrix": [
+      [
+        100598,
+        2091
+      ],
+      [
+        5576,
+        12709
+      ]
+    ]
+  },
+  "baseline": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.15114818060079024,
+    "accuracy": 0.8488518193992097,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "brier": 0.14181086293258788,
+    "confusion_matrix": [
+      [
+        102689,
+        0
+      ],
+      [
+        18285,
+        0
+      ]
+    ]
+  },
+  "test_auc_day_bootstrap_ci95": [
+    0.8993199305542184,
+    0.9162279458545404
+  ]
+}

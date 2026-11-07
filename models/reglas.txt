@@ -1,0 +1,46 @@
+|--- num__DepDelay <= 20.50
+|   |--- num__DepDelay <= 8.50
+|   |   |--- num__DepDelay <= -0.50
+|   |   |   |--- num__DepDelay <= -4.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__DepDelay >  -4.50
+|   |   |   |   |--- class: 0
+|   |   |--- num__DepDelay >  -0.50
+|   |   |   |--- cat__Reporting_Airline_WN <= 0.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- cat__Reporting_Airline_WN >  0.50
+|   |   |   |   |--- class: 0
+|   |--- num__DepDelay >  8.50
+|   |   |--- num__DepDelay <= 15.50
+|   |   |   |--- num__DepDelay <= 12.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__DepDelay >  12.50
+|   |   |   |   |--- class: 0
+|   |   |--- num__DepDelay >  15.50
+|   |   |   |--- num__DepDelay <= 18.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__DepDelay >  18.50
+|   |   |   |   |--- class: 0
+|--- num__DepDelay >  20.50
+|   |--- num__DepDelay <= 30.50
+|   |   |--- num__DepDelay <= 24.50
+|   |   |   |--- num__CRSElapsedTime <= 113.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__CRSElapsedTime >  113.50
+|   |   |   |   |--- class: 1
+|   |   |--- num__DepDelay >  24.50
+|   |   |   |--- num__CRSElapsedTime <= 131.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__CRSElapsedTime >  131.50
+|   |   |   |   |--- class: 1
+|   |--- num__DepDelay >  30.50
+|   |   |--- num__DepDelay <= 37.50
+|   |   |   |--- num__CRSElapsedTime <= 186.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__CRSElapsedTime >  186.50
+|   |   |   |   |--- class: 1
+|   |   |--- num__DepDelay >  37.50
+|   |   |   |--- num__DepDelay <= 44.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__DepDelay >  44.50
+|   |   |   |   |--- class: 1
